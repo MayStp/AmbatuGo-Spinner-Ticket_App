@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#2C2C2C"
+    tools:context=".MainActivity">
+
+<!--=====================================================================-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="AmbatuGO"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+<!--=====================================================================-->
+                                <!--AMBIL SPINNER-->
+<!--=====================================================================-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textColor="@color/black"
+                android:background="@drawable/gradient"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<!--=====================================================================-->
+                                <!--AMBIL TANGGAL-->
+<!--=====================================================================-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal"
+            android:textColor="@color/black"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <DatePicker
+            android:id="@+id/pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:layout_marginTop="20dp"
+            android:calendarViewShown="false"/>
+    </androidx.cardview.widget.CardView>
+<!--=====================================================================-->
+                                <!--AMBIL WAKTU-->
+<!--=====================================================================-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Waktu"
+            android:textColor="@color/black"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <TimePicker
+            android:id="@+id/pick_time"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"/>
+    </androidx.cardview.widget.CardView>
+<!--=====================================================================-->
+                                    <!--BUTTON-->
+<!--=====================================================================-->
+    <Button
+        android:id="@+id/order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/poppins_bold"
+        android:text="PESAN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
